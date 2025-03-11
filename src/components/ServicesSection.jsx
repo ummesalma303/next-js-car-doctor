@@ -3,6 +3,7 @@ import Image from "next/image"
 // import React, { useEffect } from 'react'
 
 import { useEffect, useState } from "react"
+import Service from "./Service"
 
 export default  function ServicesSection() {
     const [services,setServices] = useState([])
@@ -19,17 +20,12 @@ export default  function ServicesSection() {
      return 
    }, [setServices])
    
-        
+        // 
     
   return (
     <div className="grid grid-cols-3">
      {
-        services?.map(service => (
-        <div key={service?._id}>
-             <Image src={service?.img} width={107} height={87}/>
-           {console.log(service.img)}
-        </div>
-    ))
+      services.map(service => <Service key={service._id} service={service} />)
      }
     </div>
   )
