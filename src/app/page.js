@@ -1,12 +1,15 @@
-import NavBar from "@/components/NavBar";
-import ServicesSection from "@/components/ServicesSection";
+// import ServicesSection from "@/app/components/ServicesSection";
 import Image from "next/image";
+import NavBar from "./components/NavBar";
+import { Children } from "react";
 
 export default function Home() {
   return (
     <div>
-     <NavBar/>
-     <ServicesSection/>
+    
+     
+     {/* <ServicesSection/> */}
+     
     </div>
   );
 }

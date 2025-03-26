@@ -1,14 +1,15 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { IoMdSearch } from "react-icons/io";
 import { CiShoppingBasket } from "react-icons/ci";
+import Image from 'next/image';
 
 export default function NavBar() {
     const navItems = <>
      <li><Link href={"/"}>Home</Link></li>
-     <li><Link href={"/"}>Home</Link></li>
-     <li><Link href={"/"}>Home</Link></li>
+     <li><Link href="/pages/about">About</Link></li>
+     <li><Link href={"/pages/services"}>Services</Link></li>
     </>
   return (
     <div>
