@@ -12,14 +12,14 @@ export default function NavBar() {
      <li><Link href={"/pages/services"}>Services</Link></li>
     </>
   return (
-    <div>
-      <div className="navbar bg-base-100 px-12">
+    <div className='sticky top-0'>
+      <div className="navbar bg-base-100 px-12 ">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
+          className="h-3 w-5"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor">
@@ -37,7 +37,7 @@ export default function NavBar() {
       </ul>
     </div>
     {/* <a className="btn btn-ghost text-xl">daisyUI</a> */}
-    <Image src={'/assets/logo.svg'} width={107} height={87}/>
+    <Image src={'/assets/logo.svg'} width={87} height={55}/>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
